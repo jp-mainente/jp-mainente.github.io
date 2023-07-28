@@ -13,22 +13,21 @@ h2 {
 p {
     font-size: 1.0em;
     line-height: 1.5em;
-    color: #0C0E0E;
+    color: #2A3131;
     text-align: justify;
 }
 
 .container {
-    width: 100%;
-    max-width: 960px; /* Adjust this value as needed */
-    margin: 0 auto; /* Centers the container on the page */
+    width: 95%;
+    margin: 0 auto; 
 }
 
 .left-column {
-    width: 30%;
+    width: 29%;
     float: left;
   }
 .right-column {
-    width: 70%;
+    width: 69%;
     float: right;
     padding-top: 0em;
     margin-top: 0em;
@@ -42,11 +41,6 @@ p {
     clear: both;
 }
 
-.picture {
-    margin-bottom: 10px;
-    scale: .5;
-}
-
 .header {
     color: #00365B;
     font-size: 3.0em;
@@ -57,23 +51,35 @@ p {
 
 nav {
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
 }
 
 /* Style for the list items */
-li {
+.menu_li {
     display: inline; /* Display list items horizontally */
     margin-right: 20px; /* Add spacing between list items */
+    font-size: 1.5em;
 }
 
-/* Style for the links */
 a {
-    text-decoration: none; /* Remove underline from links */
-    color: #000029; /* Set link color */
+    text-decoration:none; /* Remove underline from links */
+    color: #2E2923; 
+}
+
+.a_list {
+    text-decoration:underline; /* Remove underline from links */
+    color: #2E2923; 
 }
 
 /* Change link color on hover */
 a:hover {
     color: #007bff; /* Change link color on hover (blue in this example) */
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
