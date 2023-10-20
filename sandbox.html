@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .center-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            height: 100vh;           /* 100% of the viewport height */
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .text {
+            flex: 1; /* Take up equal space in the row */
+            padding: 20px;
+        }
+
+        .picture {
+            flex: 1; /* Take up equal space in the row */
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%; /* Ensure the image doesn't exceed its container */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <div class="content-container">
+            <div class="text">
+                <h2>Left Column</h2>
+                <p>This is your text content on the left side.</p>
+            </div>
+            <div class="picture">
+                <img src="img/jpcm.jpeg" alt="Joao Pedro" width="200px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

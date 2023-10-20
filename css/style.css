@@ -22,24 +22,6 @@ p {
     margin: 0 auto; 
 }
 
-.left-column {
-    width: 29%;
-    float: left;
-  }
-.right-column {
-    width: 69%;
-    float: right;
-    padding-top: 0em;
-    margin-top: 0em;
-    text-align: left;
-  }
-
-/* Clear the float to prevent unwanted effects on other elements */
-.container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .header {
     color: #00365B;
@@ -83,3 +65,27 @@ hr{
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
+
+.center-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* 100% of the viewport height */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    flex: 1; /* Take up equal space in the row */
+    padding: 20px;
+    width: 40%;
+}
+
+.picture {
+    flex: 1; /* Take up equal space in the row */
+    padding: 20px;
+}
+
